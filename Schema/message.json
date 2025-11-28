@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DelNet WireMessage",
+  "type": "object",
+  "properties": {
+    "msgId": { "type": "string" },
+    "protocol": { "type": "string", "const": "delnet" },
+    "protocolVersion": { "type": "integer" },
+    "type": { "type": "string" },
+    "senderId": { "type": "string" },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "body": { "type": "object" }
+  },
+  "required": ["msgId", "protocol", "protocolVersion", "type", "senderId", "createdAt", "body"]
+}
