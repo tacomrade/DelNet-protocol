@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DelNet Identity",
+  "type": "object",
+  "properties": {
+    "id": { "type": "string" },
+    "publicKey": { "type": "string" },
+    "displayName": { "type": ["string", "null"] },
+    "avatarUrl": { "type": ["string", "null"] },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "updatedAt": { "type": "string", "format": "date-time" },
+    "meta": { "type": "object" }
+  },
+  "required": ["id", "publicKey", "createdAt"]
+}
